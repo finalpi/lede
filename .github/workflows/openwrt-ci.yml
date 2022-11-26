@@ -384,23 +384,15 @@ jobs:
           #
           # Root filesystem images
           #
-          CONFIG_TARGET_ROOTFS_EXT4FS=y
-          CONFIG_TARGET_EXT4_RESERVED_PCT=0
-          CONFIG_TARGET_EXT4_BLOCKSIZE_4K=y
-          # CONFIG_TARGET_EXT4_BLOCKSIZE_2K is not set
-          # CONFIG_TARGET_EXT4_BLOCKSIZE_1K is not set
-          CONFIG_TARGET_EXT4_BLOCKSIZE=4096
-          # CONFIG_TARGET_EXT4_JOURNAL is not set
+          # CONFIG_TARGET_ROOTFS_EXT4FS is not set
           CONFIG_TARGET_ROOTFS_SQUASHFS=y
           CONFIG_TARGET_SQUASHFS_BLOCK_SIZE=1024
           CONFIG_TARGET_UBIFS_FREE_SPACE_FIXUP=y
           CONFIG_TARGET_UBIFS_JOURNAL_SIZE=""
-          CONFIG_TARGET_IMAGES_GZIP=y
           
           #
           # Image Options
           #
-          CONFIG_TARGET_ROOTFS_PARTSIZE=400
           # CONFIG_TARGET_ROOTFS_PERSIST_VAR is not set
           # end of Target Images
           
@@ -4868,7 +4860,7 @@ jobs:
           #
           CONFIG_PACKAGE_luci-app-accesscontrol=y
           # CONFIG_PACKAGE_luci-app-acme is not set
-          CONFIG_PACKAGE_luci-app-adblock=y
+          # CONFIG_PACKAGE_luci-app-adblock is not set
           # CONFIG_PACKAGE_luci-app-adbyby-plus is not set
           # CONFIG_PACKAGE_luci-app-adguardhome is not set
           CONFIG_PACKAGE_luci-app-adguardhome_INCLUDE_binary=y
@@ -5054,7 +5046,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-sqm is not set
           # CONFIG_PACKAGE_luci-app-squid is not set
           # CONFIG_PACKAGE_luci-app-ssr-mudb-server is not set
-          CONFIG_PACKAGE_luci-app-ssr-plus=y
+          # CONFIG_PACKAGE_luci-app-ssr-plus is not set
           # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_NONE_Client is not set
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client=y
           # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Client is not set
@@ -5101,7 +5093,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-uugamebooster is not set
           # CONFIG_PACKAGE_luci-app-v2ray-server is not set
           # CONFIG_PACKAGE_luci-app-verysync is not set
-          CONFIG_PACKAGE_luci-app-vlmcsd=y
+          # CONFIG_PACKAGE_luci-app-vlmcsd is not set
           # CONFIG_PACKAGE_luci-app-vnstat is not set
           # CONFIG_PACKAGE_luci-app-vpnbypass is not set
           CONFIG_PACKAGE_luci-app-vsftpd=y
@@ -5126,7 +5118,7 @@ jobs:
           #
           # 4. Themes
           #
-          CONFIG_PACKAGE_luci-theme-argon=y
+          # CONFIG_PACKAGE_luci-theme-argon is not set
           # CONFIG_PACKAGE_luci-theme-argon-mod is not set
           # CONFIG_PACKAGE_luci-theme-argonne is not set
           # CONFIG_PACKAGE_luci-theme-atmaterial_new is not set
@@ -5183,13 +5175,6 @@ jobs:
           
           CONFIG_PACKAGE_default-settings=y
           CONFIG_PACKAGE_luci-i18n-accesscontrol-zh-cn=y
-          # CONFIG_PACKAGE_luci-i18n-adblock-it is not set
-          # CONFIG_PACKAGE_luci-i18n-adblock-ja is not set
-          # CONFIG_PACKAGE_luci-i18n-adblock-pt-br is not set
-          # CONFIG_PACKAGE_luci-i18n-adblock-ru is not set
-          # CONFIG_PACKAGE_luci-i18n-adblock-sv is not set
-          CONFIG_PACKAGE_luci-i18n-adblock-zh-cn=y
-          # CONFIG_PACKAGE_luci-i18n-adblock-zh-tw is not set
           CONFIG_PACKAGE_luci-i18n-arpbind-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-autoreboot-zh-cn=y
           # CONFIG_PACKAGE_luci-i18n-base-ca is not set
@@ -5253,8 +5238,6 @@ jobs:
           # CONFIG_PACKAGE_luci-i18n-passwall-zh_Hans is not set
           CONFIG_PACKAGE_luci-i18n-smartdns-zh-cn=y
           # CONFIG_PACKAGE_luci-i18n-smartdns-zh_Hans is not set
-          CONFIG_PACKAGE_luci-i18n-ssr-plus-zh-cn=y
-          # CONFIG_PACKAGE_luci-i18n-ssr-plus-zh_Hans is not set
           CONFIG_PACKAGE_luci-i18n-turboacc-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-unblockmusic-zh-cn=y
           # CONFIG_PACKAGE_luci-i18n-upnp-ca is not set
@@ -5282,7 +5265,6 @@ jobs:
           # CONFIG_PACKAGE_luci-i18n-upnp-vi is not set
           CONFIG_PACKAGE_luci-i18n-upnp-zh-cn=y
           # CONFIG_PACKAGE_luci-i18n-upnp-zh-tw is not set
-          CONFIG_PACKAGE_luci-i18n-vlmcsd-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-vsftpd-zh-cn=y
           # CONFIG_PACKAGE_luci-i18n-wol-ca is not set
           # CONFIG_PACKAGE_luci-i18n-wol-cs is not set
@@ -7267,6 +7249,17 @@ jobs:
           # CONFIG_PACKAGE_ykpers is not set
           # CONFIG_PACKAGE_yq is not set
           # end of Utilities
+          
+          #
+          # Xorg
+          #
+          
+          #
+          # Font-Utils
+          #
+          # CONFIG_PACKAGE_fontconfig is not set
+          # end of Font-Utils
+          # end of Xorg
           EOF
 
           #
